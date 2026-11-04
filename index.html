@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="id">
+@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madyakasa</title>
     
     <!-- Link CSS buatan sendiri -->
+    <title>Madyakasa on Style</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Lilita+One&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,800;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Link Library Animasi AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,6 +20,22 @@
     <section class="hero">
         <h1 data-aos="fade-down" data-aos-duration="1000">Selamat Datang di Madyakasa</h1>
         <p data-aos="fade-up" data-aos-delay="300">Wadah kreativitas, jurnalistik, dan karya visual.</p>
+        <div class="hero-copy">
+            <p class="eyebrow" data-aos="fade-down" data-aos-duration="800">SMA Negeri 3 Denpasar</p>
+            <h1 data-aos="fade-down" data-aos-duration="1000">Madyakasa on Style</h1>
+            <p class="tagline" data-aos="fade-up" data-aos-delay="200">Be Trendsetter Not A Follower</p>
+
+            <div class="desc" data-aos="fade-up" data-aos-delay="400">
+            <p>
+                Masih kerap kali, menjadi muda diidentikkan dengan 'mengekor'. Padahal,
+                <em>redefining teenage power</em> adalah tentang keberanian mendefinisikan kekuatan remaja untuk membawa perubahan.
+            </p>
+            <p class="prompt">🗣️ <span>Percayakah kamu remaja dapat membawa perubahan?</span> 💬</p>
+            <p>
+                Kami adalah Madyakasa dari SMA Negeri 3 Denpasar. Sekumpulan remaja yang mengiprahkan sayap, menembus batas, dan mengangkasa tinggi demi membawa perubahan nyata.
+            </p>
+            </div>
+        </div>
     </section>
 
     <!-- Section 2: Foto dengan Animasi -->
@@ -31,8 +51,7 @@
     <section class="video-section" data-aos="flip-up" data-aos-duration="1000">
         <h2>Video Dokumentasi</h2>
         <video controls width="800" autoplay muted loop>
-            <source src="assets/videos/video1.mp4" type="video/mp4">
-            Browser kamu tidak mendukung pemutaran video.
+@ -36,7 +47,6 @@
         </video>
     </section>
 
@@ -40,4 +59,3 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
