@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Lilita One', cursive, sans-serif;
+  --font-serif-quote: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-brand-red: #D9381E;
+  --color-brand-orange: #F97316;
+  --color-brand-yellow: #FFD23F;
+  --color-brand-green: #3B7A57;
+  --color-brand-dark: #1A1816;
+  --color-brand-cream: #FAF6ED;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF6ED;
+  color: #1A1816;
+  overflow-x: hidden;
+}
+
+.font-lilita {
+  font-family: var(--font-display);
+}
+
+.font-fraunces {
+  font-family: var(--font-serif-quote);
+}
+
+/* Retro comic halftone pattern & noise background accents */
+.bg-halftone {
+  background-image: radial-gradient(#1A1816 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.bg-halftone-light {
+  background-image: radial-gradient(rgba(217, 56, 30, 0.15) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* 3D Pop shadows */
+.shadow-brutal-sm {
+  box-shadow: 3px 3px 0px #1A1816;
+}
+
+.shadow-brutal {
+  box-shadow: 6px 6px 0px #1A1816;
+}
+
+.shadow-brutal-lg {
+  box-shadow: 10px 10px 0px #1A1816;
+}
+
+.shadow-brutal-red {
+  box-shadow: 6px 6px 0px #D9381E;
+}
+
+.shadow-brutal-yellow {
+  box-shadow: 6px 6px 0px #FFD23F;
+}
+
+/* AOS (Animate On Scroll) simulation */
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 800ms;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1) rotate(0);
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d(0, -40px, 0);
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 40px, 0);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.85);
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-aos="flip-up"] {
+  transform: perspective(1000px) rotateX(45deg) translate3d(0, 30px, 0);
+}
+
+/* Delays */
+[data-aos-delay="200"] {
+  transition-delay: 200ms;
+}
+[data-aos-delay="400"] {
+  transition-delay: 400ms;
+}
+[data-aos-delay="600"] {
+  transition-delay: 600ms;
+}
+
+/* Durations */
+[data-aos-duration="800"] {
+  transition-duration: 800ms;
+}
+[data-aos-duration="1000"] {
+  transition-duration: 1000ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9381E;
+  border: 2px solid #FAF6ED;
+  border-radius: 9999px;
+}

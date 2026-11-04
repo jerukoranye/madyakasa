@@ -1,0 +1,8 @@
+{
+  "name": "Madyakasa on Style",
+  "description": "SMA Negeri 3 Denpasar - Madyakasa on Style: Be Trendsetter Not A Follower. Redefining teenage power.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
