@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madyakasa</title>
+    
+    <!-- Link CSS buatan sendiri -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Library Animasi AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!-- Section 1: Hero / Judul Utama -->
+    <section class="hero">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Selamat Datang di Madyakasa</h1>
+        <p data-aos="fade-up" data-aos-delay="300">Wadah kreativitas, jurnalistik, dan karya visual.</p>
+    </section>
+
+    <!-- Section 2: Foto dengan Animasi -->
+    <section class="gallery">
+        <h2 data-aos="zoom-in">Galeri Foto</h2>
+        <div class="card-container">
+            <img src="assets/images/foto1.jpg" alt="Foto 1" data-aos="fade-right" data-aos-duration="800">
+            <img src="assets/images/foto2.jpg" alt="Foto 2" data-aos="fade-left" data-aos-duration="800">
+        </div>
+    </section>
+
+    <!-- Section 3: Video -->
+    <section class="video-section" data-aos="flip-up" data-aos-duration="1000">
+        <h2>Video Dokumentasi</h2>
+        <video controls width="800" autoplay muted loop>
+            <source src="assets/videos/video1.mp4" type="video/mp4">
+            Browser kamu tidak mendukung pemutaran video.
+        </video>
+    </section>
+
+    <!-- Script Library Animasi & Script Lokal -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
