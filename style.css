@@ -1,0 +1,49 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling Foto */
+.card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-container img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Efek animasi hover saat kursor menempel di foto */
+.card-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Styling Video */
+video {
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
