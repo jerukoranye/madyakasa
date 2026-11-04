@@ -3,17 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madyakasa on Style</title>
+    <title>Madyakasa on Style - SMA Negeri 3 Denpasar</title>
     <meta name="description" content="SMA Negeri 3 Denpasar - Madyakasa on Style: Be Trendsetter Not A Follower. Redefining teenage power." />
-    <meta property="og:title" content="Madyakasa on Style" />
-    <meta property="og:description" content="SMA Negeri 3 Denpasar - Madyakasa on Style: Be Trendsetter Not A Follower. Redefining teenage power." />
-
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Lilita+One&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Lilita+One&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lilita: ['"Lilita One"', 'cursive', 'sans-serif'],
+                        fraunces: ['"Fraunces"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    },
+                    colors: {
+                        brandRed: '#D9381E',
+                        brandYellow: '#FFD23F',
+                        brandDark: '#1A1816',
+                        brandCream: '#FAF6ED',
+                        brandGreen: '#3B7A57'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6ED;
+            color: #1A1816;
+            overflow-x: hidden;
+        }
+        .shadow-brutal { box-shadow: 6px 6px 0px #1A1816; }
+        .shadow-brutal-sm { box-shadow: 3px 3px 0px #1A1816; }
+        .shadow-brutal-lg { box-shadow: 8px 8px 0px #1A1816; }
+    </style>
 </head>
-<body class="bg-[#FBF8F2] text-[#1E1B18] antialiased selection:bg-[#E54225] selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Top Bar -->
+    <div class="bg-brandDark text-brandYellow px-4 py-2 text-xs font-bold tracking-widest uppercase overflow-hidden whitespace-nowrap flex items-center justify-between border-b-2 border-brandDark">
+        <div class="flex items-center gap-6">
+            <span>⚡ SMA NEGERI 3 DENPASAR</span>
+            <span>•</span>
+            <span>MADYAKASA ON STYLE</span>
+            <span>•</span>
+            <span>BE TRENDSETTER NOT A FOLLOWER</span>
+            <span>•</span>
+            <span>REDEFINING TEENAGE POWER</span>
+        </div>
+        <div class="hidden md:flex items-center gap-2 text-white/80 text-xs">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>TRISMA DENPASAR</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-[#FAF6ED]/95 backdrop-blur-md border-b-2 border-brandDark px-4 md:px-8 py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-brandRed border-2 border-brandDark flex items-center justify-center font-lilita text-white text-xl shadow-brutal-sm">
+                    M
+                </div>
+                <div>
+                    <span class="font-lilita text-xl md:text-2xl tracking-wide block leading-none text-brandDark">
+                        MADYAKASA
+                    </span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandRed">
+                        SMA NEGERI 3 DENPASAR
+                    </span>
+                </div>
+            </a>
+
+            <nav class="flex items-center gap-4 text-sm font-bold">
+                <a href="#hero" class="px-3 py-1 hover:text-brandRed transition">Beranda</a>
+                <a href="#gallery" class="px-3 py-1 hover:text-brandRed transition">Galeri</a>
+                <a href="#video" class="px-3 py-1 hover:text-brandRed transition">Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-16 md:py-24 border-b-2 border-brandDark px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div data-aos="fade-down" data-aos-duration="800" class="inline-block mb-4">
+                <span class="inline-block px-4 py-1 rounded-full bg-brandYellow text-brandDark font-bold text-sm border-2 border-brandDark shadow-brutal-sm">
+                    SMA Negeri 3 Denpasar
+                </span>
+            </div>
+
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="font-lilita text-5xl sm:text-7xl md:text-8xl text-brandDark tracking-tight mb-4 drop-shadow-[4px_4px_0px_#D9381E]">
+                Madyakasa on Style
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="200" class="font-fraunces italic font-semibold text-2xl sm:text-3xl md:text-4xl text-brandRed mb-10">
+                “Be Trendsetter Not A Follower”
+            </p>
+
+            <div data-aos="fade-up" data-aos-delay="400" class="max-w-2xl mx-auto bg-white border-2 border-brandDark rounded-2xl p-6 md:p-8 shadow-brutal text-left space-y-5">
+                <p class="text-base sm:text-lg leading-relaxed text-[#2D2A26]">
+                    Masih kerap kali, menjadi muda diidentikkan dengan 'mengekor'. Padahal,
+                    <em class="font-fraunces font-bold text-brandRed underline decoration-brandYellow decoration-4">redefining teenage power</em> adalah tentang keberanian mendefinisikan kekuatan remaja untuk membawa perubahan.
+                </p>
+
+                <!-- Prompt Interaktif -->
+                <div class="bg-brandCream border-2 border-dashed border-brandRed rounded-xl p-4 text-center">
+                    <p class="text-base sm:text-xl font-bold text-brandDark">
+                        🗣️ <span class="font-lilita text-brandRed text-xl sm:text-2xl">Percayakah kamu remaja dapat membawa perubahan?</span> 💬
+                    </p>
+                    
+                    <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+                        <button onclick="handleVote('yes')" id="btnYes" class="px-4 py-2 bg-white hover:bg-brandYellow text-brandDark font-bold text-sm rounded-lg border-2 border-brandDark shadow-brutal-sm transition active:translate-x-0.5 active:translate-y-0.5">
+                            🔥 Pasti Percaya! (<span id="countYes">1284</span>)
+                        </button>
+                        <button onclick="handleVote('absolutely')" id="btnAbs" class="px-4 py-2 bg-brandYellow hover:bg-[#ffe066] text-brandDark font-bold text-sm rounded-lg border-2 border-brandDark shadow-brutal-sm transition active:translate-x-0.5 active:translate-y-0.5">
+                            🚀 100% Yakin! (<span id="countAbs">2450</span>)
+                        </button>
+                    </div>
+                    <p id="voteMsg" class="hidden text-xs text-brandGreen font-bold mt-2">
+                        ✓ Suaramu tercatat! Generasi muda berdaya.
+                    </p>
+                </div>
+
+                <p class="text-base sm:text-lg leading-relaxed text-[#2D2A26]">
+                    Kami adalah <strong>Madyakasa</strong> dari <strong>SMA Negeri 3 Denpasar</strong>. Sekumpulan remaja yang mengiprahkan sayap, menembus batas, dan mengangkasa tinggi demi membawa perubahan nyata.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 border-b-2 border-brandDark px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 data-aos="zoom-in" class="font-lilita text-4xl sm:text-6xl text-brandDark mb-8">
+                Galeri Foto
+            </h2>
+
+            <div class="flex justify-center">
+                <div data-aos="fade-right" data-aos-duration="800" class="max-w-md w-full bg-white border-3 border-brandDark rounded-2xl p-4 shadow-brutal-lg text-left">
+                    <div class="relative overflow-hidden rounded-xl border-2 border-brandDark group cursor-pointer" onclick="openModal()">
+                        <!-- Jalur gambar disesuaikan langsung ke file di root GitHub Anda -->
+                        <img src="./PIC 1 - MAS BAHLIL.jpg" alt="Foto Mas Bahlil" class="w-full h-auto object-cover transform transition group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-white font-bold text-xs px-3 py-1.5 rounded-full border border-brandDark shadow-brutal-sm">
+                                🔍 Klik untuk Memperbesar
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t-2 border-dashed border-brandDark/20 flex items-center justify-between">
+                        <div>
+                            <h3 class="font-lilita text-xl text-brandDark">PIC 1 - MAS BAHLIL</h3>
+                            <p class="text-xs text-[#68635B] font-semibold">Karya Pop-Art &amp; Satire Madyakasa</p>
+                        </div>
+                        <a href="./PIC 1 - MAS BAHLIL.jpg" download class="px-3 py-1.5 bg-brandYellow font-bold text-xs rounded-lg border-2 border-brandDark shadow-brutal-sm hover:bg-white transition">
+                            Unduh Foto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-16 md:py-24 border-b-2 border-brandDark bg-brandDark text-brandCream px-6 text-center">
+        <div class="max-w-4xl mx-auto" data-aos="flip-up" data-aos-duration="1000">
+            <h2 class="font-lilita text-4xl sm:text-5xl text-brandYellow mb-4">
+                Video Dokumentasi
+            </h2>
+            <p class="text-white/70 max-w-md mx-auto text-sm mb-8">
+                Dokumentasi semangat siswa-siswi SMA Negeri 3 Denpasar dalam berinovasi dan berkarya.
+            </p>
+
+            <div class="max-w-[800px] mx-auto rounded-2xl overflow-hidden border-4 border-brandCream shadow-[8px_8px_0px_#D9381E] bg-black">
+                <video controls width="800" autoplay muted loop playsinline class="w-full aspect-video object-cover">
+                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Browser kamu tidak mendukung pemutaran video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandDark text-brandCream py-8 px-6 text-center text-xs">
+        <p class="font-lilita text-xl text-brandYellow mb-1">Madyakasa on Style</p>
+        <p class="text-white/60">SMA Negeri 3 Denpasar, Bali. Be Trendsetter Not A Follower.</p>
+        <p class="text-white/40 mt-3">&copy; Madyakasa Trisma Denpasar</p>
+    </footer>
+
+    <!-- Modal Lightbox -->
+    <div id="imageModal" class="hidden fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="relative bg-white border-3 border-brandDark rounded-2xl max-w-lg w-full p-4 shadow-brutal-lg" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between pb-2 mb-2 border-b border-brandDark">
+                <span class="font-lilita text-lg">PIC 1 - MAS BAHLIL</span>
+                <button onclick="closeModal()" class="w-7 h-7 bg-brandDark text-white rounded-full font-bold">✕</button>
+            </div>
+            <img src="./PIC 1 - MAS BAHLIL.jpg" alt="Foto Mas Bahlil" class="w-full h-auto rounded-lg">
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: false, mirror: true });
+
+        function handleVote(type) {
+            let yesCount = parseInt(document.getElementById('countYes').innerText);
+            let absCount = parseInt(document.getElementById('countAbs').innerText);
+            if (type === 'yes') {
+                document.getElementById('countYes').innerText = yesCount + 1;
+            } else {
+                document.getElementById('countAbs').innerText = absCount + 1;
+            }
+            document.getElementById('btnYes').disabled = true;
+            document.getElementById('btnAbs').disabled = true;
+            document.getElementById('voteMsg').classList.remove('hidden');
+        }
+
+        function openModal() {
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
